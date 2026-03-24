@@ -107,6 +107,20 @@ a { text-decoration: none; color: inherit; }
 .logo img { height: 32px; display: block; transition: transform 0.3s; }
 .logo:hover img { transform: scale(1.05); }
 .header-center { display: flex; align-items: center; gap: 32px; }
+
+/* AI Glow Button */
+.feature-btn {
+  box-shadow: 0 0 15px rgba(232, 33, 29, 0.4);
+  border-color: rgba(232, 33, 29, 0.4);
+  color: var(--black);
+  animation: breatheRedGlow 2.5s ease-in-out infinite alternate;
+}
+.feature-btn svg { color: var(--red); }
+@keyframes breatheRedGlow {
+  0% { box-shadow: 0 0 10px rgba(232, 33, 29, 0.2); border-color: rgba(232, 33, 29, 0.3); }
+  100% { box-shadow: 0 0 25px rgba(232, 33, 29, 0.8); border-color: rgba(232, 33, 29, 0.8); }
+}
+
 .nav-links { display: flex; gap: 24px; }
 .nav-links a { font-weight: 600; font-size: 15px; color: var(--black); padding: 8px 4px; transition: color 0.2s; }
 .nav-links a:hover { color: var(--red); }
