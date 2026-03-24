@@ -16,28 +16,29 @@
     <div class="header-container">
       
       <div class="header-left">
-        <!-- Logo in one color (Red) -->
         <a href="index-v2.html" class="logo">
           <img src="assets/logos/logo-red.svg" alt="Go Red Sea">
         </a>
       </div>
       
       <div class="header-center">
-        <!-- AI Plan Button (TripAdvisor style) -->
         <a href="#" class="btn-outline-pill feature-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           Plan with AI
         </a>
         <nav class="nav-links">
-          <a href="#">Destinations</a>
-          <a href="#">Experiences</a>
-          <a href="#">Packages</a>
+          <a href="#">Discover</a>
+          <a href="#">Trips</a>
           <a href="#">Review</a>
+          <a href="#">Forums</a>
         </nav>
       </div>
 
       <div class="header-right">
-        <span class="currency">USD</span>
+        <span class="currency">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg> 
+          USD
+        </span>
         <a href="#" class="btn-dark-pill">Sign in</a>
       </div>
 
@@ -74,17 +75,16 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </div>
           <input type="text" placeholder="Places to go, things to do, resorts...">
-          <!-- Red button to match our identity instead of green -->
+          <!-- Red button to match our identity -->
           <button class="btn-primary-pill search-submit">Search</button>
         </div>
       </div>
     </section>
 
-    <!-- ════════════ PROMO BANNER ════════════ -->
-    <section class="container">
-      <div class="promo-banner">
+    <!-- ════════════ PROMO BANNER (SATURATED RED) ════════════ -->
+    <section class="container mt-section">
+      <div class="promo-banner saturated-promo">
         
-        <!-- Background Elements matching the TA style but with Red Sea theme -->
         <div class="promo-bg-patterns">
           <div class="floating-badge badge-1">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -103,11 +103,12 @@
             <strong>Go Red Sea</strong> Rewards
           </div>
           
-          <h2 class="promo-heading">Go big on<br>your coastal<br>escape</h2>
+          <h2 class="promo-heading">Go big on<br>spring<br>break fun</h2>
           
-          <p class="promo-text">Browse thousands of things to do and score exclusive perks when you book directly.</p>
+          <p class="promo-text">Browse thousands of things to do and score Trip Cash when you book — only in the app.</p>
           
-          <a href="#" class="btn-dark-pill promo-cta">Explore packages</a>
+          <!-- TripAdvisor uses a dark button on the bright banner -->
+          <a href="#" class="btn-dark-pill promo-cta">Continue in app</a>
         </div>
 
         <div class="promo-visual">
@@ -123,9 +124,9 @@
             <div class="visual-popup popup-bottom">
               <div class="popup-text">
                 <strong>Private Yacht Charter</strong>
-                <div class="stars">★★★★★</div>
+                <div class="stars">●●●●●</div>
               </div>
-              <div class="btn-green-sm">Discover</div>
+              <div class="btn-green-sm" style="background:var(--black);">Discover</div>
             </div>
           </div>
         </div>
@@ -136,7 +137,7 @@
     <!-- ════════════ INTEREST GRID ════════════ -->
     <section class="container mt-section">
       <h3 class="section-title">Find things to do by interest</h3>
-      <p class="section-subtitle">Whatever you're into, we've got the perfect coastal escape</p>
+      <p class="section-subtitle">Whatever you're into, we've got it</p>
 
       <div class="interest-grid">
         <a href="#" class="interest-card">
@@ -166,7 +167,173 @@
       </div>
     </section>
 
+    <!-- ════════════ TOP DESTINATIONS ════════════ -->
+    <section class="container mt-section">
+      <h3 class="section-title">Top destinations for your next trip</h3>
+      <div class="dest-grid-ta">
+        <a href="#" class="dest-card-ta">
+          <img src="assets/images/dest_sharm.png" alt="Sharm El-Sheikh">
+          <h4>Sharm El-Sheikh</h4>
+        </a>
+        <a href="#" class="dest-card-ta">
+          <img src="assets/images/dest_hurghada.png" alt="Hurghada">
+          <h4>Hurghada</h4>
+        </a>
+        <a href="#" class="dest-card-ta">
+          <img src="assets/images/dest_neom.png" alt="NEOM Coast">
+          <h4>NEOM Coast</h4>
+        </a>
+        <a href="#" class="dest-card-ta">
+          <img src="assets/images/hero.png" alt="Dahab">
+          <h4>Dahab</h4>
+        </a>
+      </div>
+    </section>
+
+    <!-- ════════════ WAYS TO TOUR ════════════ -->
+    <section class="container mt-section">
+      <h3 class="section-title">Ways to tour the Red Sea</h3>
+      <p class="section-subtitle">Book these experiences for a trip you'll never forget.</p>
+      <div class="tour-grid-ta">
+        
+        <div class="tour-card-ta">
+          <div class="tour-img-wrap">
+            <img src="assets/images/pkg_snorkeling.png" alt="Tour">
+            <button class="heart-btn" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="tour-info">
+            <h4>Coral Reef Snorkeling with Open Buffet</h4>
+            <div class="tour-rating">
+              <span class="circles">●●●●●</span> <span>1,245</span>
+            </div>
+            <div class="tour-price">from $89 per adult</div>
+          </div>
+        </div>
+
+        <div class="tour-card-ta">
+          <div class="tour-img-wrap">
+            <img src="assets/images/pkg_desert.png" alt="Tour">
+            <button class="heart-btn" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="tour-info">
+            <h4>Desert Safari & Star Gazing Camp</h4>
+            <div class="tour-rating">
+              <span class="circles">●●●●●</span> <span>890</span>
+            </div>
+            <div class="tour-price">from $120 per adult</div>
+          </div>
+        </div>
+
+        <div class="tour-card-ta">
+          <div class="tour-img-wrap">
+            <img src="assets/images/pkg_honeymoon.png" alt="Tour">
+            <button class="heart-btn" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="tour-info">
+            <h4>Luxury Honeymoon Yacht Charter</h4>
+            <div class="tour-rating">
+              <span class="circles">●●●●●</span> <span>340</span>
+            </div>
+            <div class="tour-price">from $2,400 per group</div>
+          </div>
+        </div>
+
+        <div class="tour-card-ta">
+          <div class="tour-img-wrap">
+            <img src="assets/images/exp_resort.png" alt="Tour">
+            <button class="heart-btn" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="tour-info">
+            <h4>Day Pass: Premium Beach Club Access</h4>
+            <div class="tour-rating">
+              <span class="circles half">●●●●○</span> <span>512</span>
+            </div>
+            <div class="tour-price">from $55 per adult</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════ SECONDARY PROMO AWARDS ════════════ -->
+    <section class="secondary-promo-bg mt-section">
+      <div class="container">
+        <div class="secondary-promo">
+          <div class="sp-content">
+            <img src="assets/logos/logo-red.svg" alt="Go Red Sea">
+            <h2>Travelers' Choice Awards Best of the Best</h2>
+            <p>Among our top 1% of places, experiences, and resorts.</p>
+            <button class="btn-dark-pill">See the winners</button>
+          </div>
+          <div class="sp-graphics">
+             <img src="assets/images/exp_diving.png" alt="Awards">
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ════════════ FOOTER TA STYLE ════════════ -->
+  <footer class="footer-ta">
+    <div class="footer-ta-inner">
+      
+      <div class="f-col">
+        <h5>About Go Red Sea</h5>
+        <a href="#">About Us</a>
+        <a href="#">Press</a>
+        <a href="#">Resources and Policies</a>
+        <a href="#">Careers</a>
+        <a href="#">Trust & Safety</a>
+      </div>
+
+      <div class="f-col">
+        <h5>Explore</h5>
+        <a href="#">Write a review</a>
+        <a href="#">Add a Place</a>
+        <a href="#">Join</a>
+        <a href="#">Travelers' Choice</a>
+        <a href="#">GreenLeaders</a>
+      </div>
+
+      <div class="f-col">
+        <h5>Do Business With Us</h5>
+        <a href="#">Owners & DMO</a>
+        <a href="#">Business Advantage</a>
+        <a href="#">Sponsored Placements</a>
+        <a href="#">Access our Content API</a>
+      </div>
+
+      <div class="f-col">
+        <h5>Get The App</h5>
+        <a href="#">iPhone App</a>
+        <a href="#">Android App</a>
+      </div>
+
+      <div class="f-col">
+        <h5>Go Red Sea Sites</h5>
+        <p style="font-size: 13px; color: #555; line-height: 1.5;">
+          Book experiences across the Red Sea, from Egypt to Saudi Arabia. The coastal authority on travel.
+        </p>
+      </div>
+
+    </div>
+    
+    <div class="footer-ta-bottom">
+      <div class="ft-logo">
+        <img src="assets/logos/logo-grey.svg" alt="Go Red Sea">
+      </div>
+      <div class="ft-legal">
+        <p>&copy; 2026 Go Red Sea LLC All rights reserved.</p>
+        <div class="ft-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy and Cookies Statement</a>
+          <a href="#">Site Map</a>
+          <a href="#">How the site works</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
