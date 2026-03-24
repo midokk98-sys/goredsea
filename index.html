@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Red Sea — Discover Calm Luxury</title>
+  <meta name="description" content="Go Red Sea — Explore the world's most pristine coastline. Discover exclusive destinations, luxury resorts, yacht charters, and underwater adventures along the stunning Red Sea." />
+  <meta name="keywords" content="Red Sea travel, Red Sea luxury, Sharm El-Sheikh, Hurghada, NEOM, Red Sea diving, yacht charter, luxury resort" />
+  <link rel="icon" type="image/svg+xml" href="assets/logos/logo-red.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav-inner">
+      <a href="/" class="nav-logo" id="nav-logo-link" aria-label="Go Red Sea - Home">
+        <div class="logo-wrap">
+          <img src="assets/logos/logo-red.svg"   alt="Go Red Sea" class="logo-img logo-dark"  id="logo-dark" />
+          <img src="assets/logos/logo-white.svg" alt="Go Red Sea" class="logo-img logo-light" id="logo-light" />
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#destinations" class="nav-link">Destinations</a></li>
+        <li><a href="#experiences" class="nav-link">Experiences</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="#why" class="nav-link">Why Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#booking" class="btn btn-primary nav-cta" id="nav-book-btn">Book Now</a>
+        <button class="nav-burger" id="nav-burger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#destinations" class="mobile-link">Destinations</a></li>
+      <li><a href="#experiences" class="mobile-link">Experiences</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="#booking" class="btn btn-primary mobile-cta">Book Now</a></li>
+    </ul>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <img src="assets/images/hero.png" alt="Red Sea luxury coastal view" class="hero-img" id="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Saudi Arabia &amp; Egypt's Premier Coastline</span>
+      </div>
+
+      <h1 class="hero-headline">
+        Discover Calm Luxury.<br />
+        <em>Go Red Sea.</em>
+      </h1>
+
+      <p class="hero-subline">Your gateway to the world's most pristine waters and exclusive coastal escapes.</p>
+
+      <!-- Search / Booking Bar -->
+      <div class="booking-bar" id="booking">
+        <div class="booking-field" id="booking-dest">
+          <div class="field-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <div class="field-content">
+            <label class="field-label">Destination</label>
+            <input type="text" class="field-input" placeholder="Where do you want to go?" id="dest-input" />
+          </div>
+        </div>
+
+        <div class="booking-divider"></div>
+
+        <div class="booking-field" id="booking-dates">
+          <div class="field-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="field-content">
+            <label class="field-label">Dates</label>
+            <input type="text" class="field-input" placeholder="Check-in — Check-out" id="dates-input" />
+          </div>
+        </div>
+
+        <div class="booking-divider"></div>
+
+        <div class="booking-field" id="booking-guests">
+          <div class="field-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="field-content">
+            <label class="field-label">Guests</label>
+            <input type="text" class="field-input" placeholder="2 adults, 0 children" id="guests-input" />
+          </div>
+        </div>
+
+        <button class="booking-search-btn" id="search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <span>Search</span>
+        </button>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-item">
+          <strong>500+</strong>
+          <span>Destinations</span>
+        </div>
+        <div class="trust-dot"></div>
+        <div class="trust-item">
+          <strong>12,000+</strong>
+          <span>Happy Travelers</span>
+        </div>
+        <div class="trust-dot"></div>
+        <div class="trust-item">
+          <strong>4.9 ★</strong>
+          <span>Average Rating</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       STATS BAR
+  ═══════════════════════════════════════════ -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <strong class="stat-num">500<span>+</span></strong>
+        <span class="stat-label">Curated Destinations</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <strong class="stat-num">12,000<span>+</span></strong>
+        <span class="stat-label">Happy Travelers</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <strong class="stat-num">98<span>%</span></strong>
+        <span class="stat-label">Satisfaction Rate</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <strong class="stat-num">4.9<span>★</span></strong>
+        <span class="stat-label">Average Rating</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <strong class="stat-num">15<span>+</span></strong>
+        <span class="stat-label">Years of Expertise</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       DESTINATIONS SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Explore the Coast</p>
+        <h2 class="section-title">Our Exclusive <em>Destinations</em></h2>
+        <p class="section-subtitle">From Egypt's legendary shores to Saudi Arabia's emerging gems — each destination is a world of its own.</p>
+      </div>
+
+      <div class="destinations-grid">
+
+        <!-- Card 1 – Sharm El-Sheikh -->
+        <article class="dest-card dest-card--large" id="dest-sharm">
+          <div class="dest-card-media">
+            <img src="assets/images/dest_sharm.png" alt="Sharm El-Sheikh, Egypt" class="dest-card-img" loading="lazy" />
+            <div class="dest-card-overlay"></div>
+          </div>
+          <div class="dest-card-content">
+            <span class="dest-tag">Egypt</span>
+            <h3 class="dest-name">Sharm El-Sheikh</h3>
+            <p class="dest-desc">World-renowned diving, vibrant coral reefs, and pristine white-sand beaches.</p>
+            <a href="#" class="dest-link" aria-label="Explore Sharm El-Sheikh">
+              Explore
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2 – Hurghada -->
+        <article class="dest-card" id="dest-hurghada">
+          <div class="dest-card-media">
+            <img src="assets/images/dest_hurghada.png" alt="Hurghada, Egypt" class="dest-card-img" loading="lazy" />
+            <div class="dest-card-overlay"></div>
+          </div>
+          <div class="dest-card-content">
+            <span class="dest-tag">Egypt</span>
+            <h3 class="dest-name">Hurghada</h3>
+            <p class="dest-desc">A vibrant resort city with golden beaches and legendary water sports.</p>
+            <a href="#" class="dest-link" aria-label="Explore Hurghada">
+              Explore
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 3 – NEOM -->
+        <article class="dest-card" id="dest-neom">
+          <div class="dest-card-media">
+            <img src="assets/images/dest_neom.png" alt="NEOM, Saudi Arabia" class="dest-card-img" loading="lazy" />
+            <div class="dest-card-overlay"></div>
+          </div>
+          <div class="dest-card-content">
+            <span class="dest-tag dest-tag--gold">Saudi Arabia</span>
+            <h3 class="dest-name">NEOM Coast</h3>
+            <p class="dest-desc">The future of luxury travel — unspoiled shores, futuristic vision, timeless beauty.</p>
+            <a href="#" class="dest-link" aria-label="Explore NEOM Coast">
+              Explore
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="section-footer">
+        <a href="#" class="btn btn-outline" id="view-all-dest">View All Destinations</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCES SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section section--tinted" id="experiences">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Curated for You</p>
+        <h2 class="section-title">Coastal <em>Experiences</em></h2>
+        <p class="section-subtitle">Handpicked journeys designed to give you unforgettable moments on the Red Sea.</p>
+      </div>
+
+      <div class="experiences-grid">
+
+        <article class="exp-card" id="exp-diving">
+          <div class="exp-card-media">
+            <img src="assets/images/exp_diving.png" alt="Red Sea Diving" class="exp-card-img" loading="lazy" />
+          </div>
+          <div class="exp-card-body">
+            <div class="exp-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <h3 class="exp-name">Diving & Snorkeling</h3>
+            <p class="exp-desc">Explore vibrant coral gardens teeming with marine life in the world's finest underwater playground.</p>
+            <div class="exp-meta">
+              <span class="exp-tag">From $89 / person</span>
+              <span class="exp-duration">Half-day &amp; Full-day</span>
+            </div>
+            <a href="#" class="exp-link" id="exp-dive-link">Book Experience →</a>
+          </div>
+        </article>
+
+        <article class="exp-card" id="exp-yacht">
+          <div class="exp-card-media">
+            <img src="assets/images/exp_yacht.png" alt="Yacht Charter Red Sea" class="exp-card-img" loading="lazy" />
+          </div>
+          <div class="exp-card-body">
+            <div class="exp-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M5 20V10l7-7 7 7v10"/><path d="M9 20v-5h6v5"/></svg>
+            </div>
+            <h3 class="exp-name">Luxury Yacht Charter</h3>
+            <p class="exp-desc">Sail the open sea aboard a private superyacht. Sunset cruises, island hopping, and beyond.</p>
+            <div class="exp-meta">
+              <span class="exp-tag">From $450 / day</span>
+              <span class="exp-duration">Custom itineraries</span>
+            </div>
+            <a href="#" class="exp-link" id="exp-yacht-link">Book Experience →</a>
+          </div>
+        </article>
+
+        <article class="exp-card" id="exp-resort">
+          <div class="exp-card-media">
+            <img src="assets/images/exp_resort.png" alt="Luxury Resort Red Sea" class="exp-card-img" loading="lazy" />
+          </div>
+          <div class="exp-card-body">
+            <div class="exp-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="exp-name">Beachfront Resorts</h3>
+            <p class="exp-desc">Retreat to world-class coastal resorts offering infinity pools, fine dining, and private beach access.</p>
+            <div class="exp-meta">
+              <span class="exp-tag">From $280 / night</span>
+              <span class="exp-duration">Curated Selection</span>
+            </div>
+            <a href="#" class="exp-link" id="exp-resort-link">Book Experience →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FEATURED PACKAGES
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Curated Packages</p>
+        <h2 class="section-title">Signature <em>Journeys</em></h2>
+        <p class="section-subtitle">Thoughtfully designed all-inclusive packages — simply arrive and let us handle the rest.</p>
+      </div>
+
+      <div class="packages-grid">
+
+        <article class="pkg-card pkg-card--wide" id="pkg-snorkel">
+          <div class="pkg-card-media">
+            <img src="assets/images/pkg_snorkeling.png" alt="Red Sea Snorkeling Package" class="pkg-card-img" loading="lazy" />
+            <div class="pkg-card-overlay"></div>
+          </div>
+          <div class="pkg-card-content">
+            <div class="pkg-badge">Best Seller</div>
+            <h3 class="pkg-name">Coral Reef Explorer</h3>
+            <p class="pkg-desc">5 nights in a beachfront resort, daily snorkeling guided tours, all meals included, and a sunset felucca cruise.</p>
+            <div class="pkg-details">
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 Nights</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> 2 Guests</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Sharm El-Sheikh</span>
+            </div>
+            <div class="pkg-footer">
+              <div class="pkg-price"><span>From</span><strong>$1,290</strong><em>/ person</em></div>
+              <a href="#" class="btn btn-primary">View Package</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card" id="pkg-desert">
+          <div class="pkg-card-media">
+            <img src="assets/images/pkg_desert.png" alt="Desert & Sea Package" class="pkg-card-img" loading="lazy" />
+            <div class="pkg-card-overlay"></div>
+          </div>
+          <div class="pkg-card-content">
+            <div class="pkg-badge pkg-badge--gold">New</div>
+            <h3 class="pkg-name">Desert &amp; Sea</h3>
+            <p class="pkg-desc">Where golden dunes meet crystal waters. Jeep safari, glamping under stars, and private beach day.</p>
+            <div class="pkg-details">
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4 Nights</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Dahab</span>
+            </div>
+            <div class="pkg-footer">
+              <div class="pkg-price"><span>From</span><strong>$890</strong><em>/ person</em></div>
+              <a href="#" class="btn btn-outline">View Package</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card" id="pkg-honeymoon">
+          <div class="pkg-card-media">
+            <img src="assets/images/pkg_honeymoon.png" alt="Honeymoon Package" class="pkg-card-img" loading="lazy" />
+            <div class="pkg-card-overlay"></div>
+          </div>
+          <div class="pkg-card-content">
+            <div class="pkg-badge">Romantic</div>
+            <h3 class="pkg-name">Honeymoon Escape</h3>
+            <p class="pkg-desc">Private overwater suite, candlelit beach dinner, couple's spa, and a sunrise yacht cruise just for two.</p>
+            <div class="pkg-details">
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 7 Nights</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> NEOM Coast</span>
+            </div>
+            <div class="pkg-footer">
+              <div class="pkg-price"><span>From</span><strong>$3,400</strong><em>/ couple</em></div>
+              <a href="#" class="btn btn-outline">View Package</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════════ -->
+  <section class="section section--tinted" id="how">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Simple &amp; Effortless</p>
+        <h2 class="section-title">Your Journey in <em>3 Steps</em></h2>
+        <p class="section-subtitle">From first search to first breath of sea air — we make every step feel effortless.</p>
+      </div>
+      <div class="steps-row">
+        <div class="step" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3 class="step-title">Discover &amp; Search</h3>
+          <p class="step-desc">Browse our curated collection of destinations and experiences. Use our smart search to find exactly what you're looking for.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">
+          <svg width="40" height="16" viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="step" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="step-title">Personalise &amp; Book</h3>
+          <p class="step-desc">Tailor your trip with dates, guests, and add-ons. Secure your booking instantly with our 100% protected payment system.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">
+          <svg width="40" height="16" viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="step" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="step-title">Arrive &amp; Unwind</h3>
+          <p class="step-desc">Your dedicated concierge handles transfers, check-in, and itinerary. All you do is enjoy the Red Sea in full luxury.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       WHY GO RED SEA — VALUE PROPS
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="why-layout">
+        <div class="why-text">
+          <p class="section-eyebrow">Why Go Red Sea</p>
+          <h2 class="section-title" style="text-align:left; max-width:400px">The Difference Is<br /><em>In The Details</em></h2>
+          <p class="why-body">We don't just book travel — we curate unforgettable experiences. Every resort, activity, and itinerary is hand-selected by our coastal experts who live and breathe the Red Sea.</p>
+          <a href="#" class="btn btn-primary" id="why-cta">Start Planning</a>
+        </div>
+
+        <div class="why-pillars">
+          <div class="pillar" id="pillar-1">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="pillar-content">
+              <h4>Trusted & Secure</h4>
+              <p>Verified partners and 100% secure bookings with full refund protection.</p>
+            </div>
+          </div>
+
+          <div class="pillar" id="pillar-2">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="pillar-content">
+              <h4>24/7 Concierge</h4>
+              <p>Dedicated travel specialists available round the clock to assist you.</p>
+            </div>
+          </div>
+
+          <div class="pillar" id="pillar-3">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="pillar-content">
+              <h4>Handpicked Stays</h4>
+              <p>Every property is personally vetted for quality, comfort, and experience.</p>
+            </div>
+          </div>
+
+          <div class="pillar" id="pillar-4">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="pillar-content">
+              <h4>Best Price Guarantee</h4>
+              <p>Found a lower price? We'll match it — always.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="section section--tinted" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">From Our Travelers</p>
+        <h2 class="section-title">Stories That <em>Inspire</em></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testi-card" id="testi-1">
+          <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="testi-quote">"The Red Sea exceeded every expectation. The coral reefs were unlike anything I'd ever seen. Go Red Sea made everything seamless — from our resort to the diving excursions."</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">S</div>
+            <div>
+              <strong>Sarah M.</strong>
+              <span>London, UK — Sharm El-Sheikh</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card testi-card--featured" id="testi-2">
+          <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="testi-quote">"Our private yacht charter was absolutely magical. Watching the sunset over the Red Sea with my family — moments I'll treasure forever. The team handled everything perfectly."</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">K</div>
+            <div>
+              <strong>Khalid A.</strong>
+              <span>Riyadh, KSA — NEOM Coast</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card" id="testi-3">
+          <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="testi-quote">"Hurghada was the perfect escape. The resort was stunning, the food incredible, and the sea was just breathtaking. Will absolutely return through Go Red Sea."</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">L</div>
+            <div>
+              <strong>Layla R.</strong>
+              <span>Dubai, UAE — Hurghada</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       NEWSLETTER / CTA BANNER
+  ═══════════════════════════════════════════ -->
+  <section class="cta-banner" id="about">
+    <div class="cta-banner-content">
+      <p class="section-eyebrow" style="color:rgba(255,255,255,0.7)">Get Inspired</p>
+      <h2 class="cta-banner-title">Ready to Experience<br /><em>The Red Sea?</em></h2>
+      <p class="cta-banner-sub">Join thousands of travelers who've discovered the world's most beautiful coastline with us.</p>
+      <div class="cta-banner-form" id="newsletter-form">
+        <input type="email" class="cta-input" placeholder="Your email address" aria-label="Email address" id="email-input" />
+        <button class="btn btn-white" id="newsletter-btn">Get Early Access</button>
+      </div>
+      <p class="cta-fine">No spam. Unsubscribe anytime. Premium travel offers only.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logos/logo-white.svg" alt="Go Red Sea" class="footer-logo" />
+          <p class="footer-tagline">Your gateway to the world's most extraordinary coastal destinations.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram" id="social-instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook" id="social-facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter X" id="social-twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Destinations</h5>
+            <ul>
+              <li><a href="#">Sharm El-Sheikh</a></li>
+              <li><a href="#">Hurghada</a></li>
+              <li><a href="#">Dahab</a></li>
+              <li><a href="#">NEOM Coast</a></li>
+              <li><a href="#">Aqaba, Jordan</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Experiences</h5>
+            <ul>
+              <li><a href="#">Diving & Snorkeling</a></li>
+              <li><a href="#">Yacht Charters</a></li>
+              <li><a href="#">Beachfront Resorts</a></li>
+              <li><a href="#">Desert & Sea</a></li>
+              <li><a href="#">Wellness Retreats</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Booking Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Go Red Sea. All rights reserved.</p>
+        <p>Crafted with care for the most beautiful sea on earth.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
